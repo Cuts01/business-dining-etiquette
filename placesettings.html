@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Place Settings — Business Dining Etiquette</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">Business Dining<span>Etiquette</span></div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="dos.html">Do's &amp; Don'ts</a>
+        <a href="placesettings.html">Place Settings</a>
+        <a href="ordering.html">Ordering &amp; Drinks</a>
+        <a href="form.html">Form</a>
+        <a href="references.html">References</a>
+        <button class="toggle" type="button" onclick="toggleTheme()" aria-label="Toggle color theme">
+          <span id="themeToggleIcon" aria-hidden="true"></span>
+          Theme
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap grid grid-2">
+    <article class="card lift">
+      <h1>Place Settings</h1>
+      <p class="muted">A quick mental map makes it easier to relax and focus on the people at the table.</p>
+      <div class="ps-legend">
+        <button id="btn-fork" onclick="psSelect('fork')">Dinner fork</button>
+        <button id="btn-knife" onclick="psSelect('knife')">Dinner knife</button>
+        <button id="btn-spoon" onclick="psSelect('spoon')">Spoon</button>
+        <button id="btn-plate" onclick="psSelect('plate')">Dinner plate</button>
+        <button id="btn-bread" onclick="psSelect('bread')">Bread plate</button>
+        <button id="btn-water" onclick="psSelect('water')">Water glass</button>
+        <button id="btn-napkin" onclick="psSelect('napkin')">Napkin</button>
+      </div>
+      <p class="muted" style="margin-top:10px">Tip: remember “BMW” — bread on the left, main plate in the middle, water on the right.</p>
+    </article>
+
+    <figure class="card lift" aria-label="Place setting diagram">
+      <h2>Table diagram</h2>
+      <svg class="ps-diagram" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="900" height="520" fill="#d0d0d0" rx="16"/>
+        <circle id="ps-plate" cx="450" cy="260" r="110" fill="#cecfca" stroke="#8b8a8a" stroke-width="3"/>
+        <circle cx="450" cy="260" r="70" fill="#d0d0d0" stroke="#8b8a8a" stroke-width="2"/>
+        <rect id="ps-fork" x="340" y="180" width="12" height="160" fill="#858b98"/>
+        <rect x="360" y="190" width="12" height="150" fill="#858b98"/>
+        <rect id="ps-knife" x="540" y="180" width="12" height="160" fill="#858b98"/>
+        <ellipse id="ps-spoon" cx="570" cy="190" rx="8" ry="22" fill="#858b98"/>
+        <rect x="566" y="212" width="8" height="128" fill="#858b98"/>
+        <circle id="ps-bread" cx="330" cy="110" r="35" fill="#cecfca" stroke="#8b8a8a" stroke-width="2"/>
+        <circle id="ps-water" cx="610" cy="110" r="28" fill="#858b98" stroke="#8b8a8a" stroke-width="2"/>
+        <rect id="ps-napkin" x="250" y="175" width="80" height="170" fill="#d0d0d0" stroke="#8b8a8a" stroke-width="2" rx="8"/>
+      </svg>
+      <figcaption class="muted">Click any label on the left to highlight its position here.</figcaption>
+    </figure>
+  </div>
+</section>
+<footer><div class="wrap"><p>© 2025 Business Dining Etiquette. All rights reserved.</p></div></footer>
+<script src="assets/site.js"></script>
+</body></html>

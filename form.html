@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form — Business Dining Etiquette</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">Business Dining<span>Etiquette</span></div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="dos.html">Do's &amp; Don'ts</a>
+        <a href="placesettings.html">Place Settings</a>
+        <a href="ordering.html">Ordering &amp; Drinks</a>
+        <a href="form.html">Form</a>
+        <a href="references.html">References</a>
+        <button class="toggle" type="button" onclick="toggleTheme()" aria-label="Toggle color theme">
+          <span id="themeToggleIcon" aria-hidden="true"></span>
+          Theme
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <h1>Feedback form</h1>
+    <article class="card lift">
+      <form id="fb" onsubmit="event.preventDefault(); document.getElementById('thanks').style.display='block'; this.reset();">
+        <div class="field">
+          <label for="learn">What new business dining etiquette rule did you learn?</label>
+          <input id="learn" type="text" required placeholder="Type your answer here" />
+        </div>
+        <div class="field">
+          <label>After reviewing the website, how confident do you feel about attending a business meal?</label>
+          <div class="radio-row">
+            <label><input type="radio" name="conf" value="1" required>1 (not confident)</label>
+            <label><input type="radio" name="conf" value="2">2</label>
+            <label><input type="radio" name="conf" value="3">3</label>
+            <label><input type="radio" name="conf" value="4">4</label>
+            <label><input type="radio" name="conf" value="5">5 (very confident)</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="helpful">Which section did you find the most helpful?</label>
+          <input id="helpful" type="text" placeholder="For example: place settings, ordering, do's & don'ts…" />
+        </div>
+        <div class="field">
+          <label for="improve">What improvement would you suggest for this website?</label>
+          <input id="improve" type="text" placeholder="Optional" />
+        </div>
+        <button class="btn" type="submit">Submit</button>
+        <p id="thanks" style="display:none; margin-top:10px;">Thanks! Your feedback was recorded locally on this page.</p>
+      </form>
+    </article>
+  </div>
+</section>
+<footer><div class="wrap"><p>© 2025 Business Dining Etiquette. All rights reserved.</p></div></footer>
+<script src="assets/site.js"></script>
+</body></html>
